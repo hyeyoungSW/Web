@@ -3,12 +3,17 @@
 <html>
 <body>
 <h1>Todo list</h1>
+<input type="text" name="item"/>
+<form action="MainController" method="get">
+	<input type="submit" name="additem" value="additem"/>
+
+</form>
 
 <c:forEach var="item" items="%{todolist}">
 	<ol>
 		<li>${item}</li>
 	</ol>
 </c:forEach>
-<a href="index.jsp">go to main..</a>
+<a href="index.jsp">go back to main page...</a>
 </body>
 </html>
