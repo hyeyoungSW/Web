@@ -10,16 +10,15 @@ public class User {
 	private String lastName;
 	private String id;
 	private String pw;
-	private HttpSession sessionid;
-	private List <String> todolist;
+	List <String> todolist;
 	
-	public User(String firstName, String lastName, String id, String pw, HttpSession sessionid) {
+	public User(String firstName, String lastName, String id, String pw, List <String> todolist) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
 		this.id = id;
 		this.pw = pw;
-		this.sessionid = sessionid;
+		this.todolist = todolist;
 	}
 
 	public String getFirstName() {
@@ -54,20 +53,11 @@ public class User {
 		this.pw = pw;
 	}
 
-	public HttpSession getSessionid() {
-		return sessionid;
-	}
-
-	public void setSessionid(HttpSession sessionid) {
-		this.sessionid = sessionid;
-	}
-
 	public List<String> getTodolist() {
 		return todolist;
 	}
 
-	public void setTodolist(List<String> todolist) {
-		this.todolist = todolist;
+	public void addNewItem(String item) {
+		this.todolist.add(item);
 	}	
-	
 }

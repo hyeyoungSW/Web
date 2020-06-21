@@ -23,9 +23,9 @@ scope="session"
 		<fmt:message key="label.signin_lastname" />
 		<input type="text" name="lastname"/><br/><br/><hr><br/>
 		id<br/>
-		<input type="text" name="userid"/><br/>
+		<input type="text" name="id"/><br/>
 		pw<br/>
-		<input type="text" name="userpw"/><br/><br/>
+		<input type="text" name="pw"/><br/><br/>
 		<input type="submit" name="util" value="SignUp"/>
 	</form>
 </body>
